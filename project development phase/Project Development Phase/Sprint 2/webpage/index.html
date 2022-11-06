@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <title>index</title>
+    <style type="text/css">
+      #topmenu {
+        width: 100%;
+        background-color: 312D2D;
+        height: 50px;
+      }
+      #hedder {
+        color: white;
+        padding-top: 13px;
+        padding-left: 60px;
+      }
+
+      #home {
+        float: right;
+        padding-top: 13px;
+        padding-right: 50px;
+        color: rgb(222, 216, 216);
+        font-size: medium;
+      }
+      #login {
+        float: right;
+        padding-top: 13px;
+        padding-right: 50px;
+        color: rgb(222, 216, 216);
+        font-size: medium;
+      }
+      #register {
+        float: right;
+        padding-top: 13px;
+        padding-right: 50px;
+        color: rgb(222, 216, 216);
+        font-size: medium;
+      }
+      #prediction {
+        float: right;
+        padding-top: 13px;
+        padding-right: 50px;
+        color: rgb(222, 216, 216);
+        font-size: medium;
+      }
+      #about {
+        text-align: center;
+        padding-top: 10%;
+        color: gray;
+        font-size: 20px;
+      }
+      #content {
+        padding-top: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: large;
+      }
+      #footer {
+        width: 99%;
+        background-color: 312D2D;
+        height: 50px;
+        position: absolute;
+        bottom: 1%;
+      }
+      #textcontent {
+        color: white;
+        font-size: 15px;
+        padding-left: 18%;
+        padding-top: 1%;
+      }
+      #logo {
+        margin-top: -1.5%;
+        margin-right: 28%;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="topmenu">
+      <div id="prediction">
+        <a href="{{ url_for('prediction') }}" style="color: white;text-decoration: none;">prediction</a>
+      </div>
+      <div id="register">
+        <a href="{{ url_for('register') }}" style="color: white;text-decoration: none;">Register</a>
+      </div>
+      <div id="login">
+        <a href="{{ url_for('login') }}" style="color: white;text-decoration: none;">Login</a>
+      </div>
+      <div id="home">
+        <a href="{{ url_for('dashboard') }}" style="color: white;text-decoration: none;">Home</a>
+      </div>
+      <div id="hedder">
+        Intelligent Vehicle Damage Assessment & Cost Estimator for Insurance
+        Companies
+      </div>
+    </div>
+    <div id="about">
+      ABOUT PROJECT
+      <hr style="width: 13%" color="yellow" />
+    </div>
+    <div id="content">
+      <p>
+        Vehicle damage detection is used to reduce claims leakage during
+        insurance processing. Visual inception and validation are usually done.
+        As it takes a long time, because a person needs to come and inspect the
+        damage. Here we are trying to automate the procedure. Using this
+        automation, we can avoid time conception for the insurance claim
+        problem.
+      </p>
+    </div>
+
+    <div id="footer">
+      <div id="textcontent"></div>
+      
+    </div>
+  </body>
+</html>
